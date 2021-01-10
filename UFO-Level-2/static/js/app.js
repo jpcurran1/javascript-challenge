@@ -15,7 +15,7 @@ button.on("click", function(){
     tbody.html("");
     var inputElement = d3.select("#input");
     var inputValue = inputElement.property("value");
-    var filteredData = tableData.filter(dighting => sighting.datetime === inputValue,
+    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue,
                                                     sighting.city === inputValue,
                                                     sighting.state === inputValue,
                                                     sighting.country === inputValue,
